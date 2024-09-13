@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IA Testing Users - Contacto</title>
   <link rel="icon" href="assets/img/icono.png" type="image/x-icon">
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Pantalla de carga -->
   <div id="loader">
     <div class="spinner"></div>
   </div>
@@ -24,8 +22,8 @@
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">¿Quiénes Somos?</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Planes</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
@@ -36,7 +34,7 @@
       <h1>Contacto</h1>
       <p>¿Tienes una consulta? Síguenos y contáctanos a través de nuestras redes sociales</p>
       <div class="social-media-container">
-        <!-- Card 1: LinkedIn -->
+
         <a href="https://www.linkedin.com" class="social-card text-decoration-none" target="_blank">
           <div>
             <img src="assets/img/linkedin.png" alt="LinkedIn">
@@ -45,7 +43,6 @@
           </div>
         </a>
 
-        <!-- Card 2: Instagram -->
         <a href="https://www.instagram.com/iatu.app/" class="social-card text-decoration-none" target="_blank">
           <div>
             <img src="assets/img/instagram.png" alt="Instagram">
@@ -54,7 +51,6 @@
           </div>
         </a>
 
-        <!-- Card 3: Email -->
         <a href="mailto:solutionsiatu@gmail.com" class="social-card text-decoration-none">
           <div>
             <img src="assets/img/email.png" alt="Email">
@@ -64,13 +60,11 @@
         </a>
       </div>
 
-      <!-- Sección de Instagram -->
       <div class="instagram-embed">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/iatu.app/" data-instgrm-version="12"></blockquote>
         <script async src="//www.instagram.com/embed.js"></script>
       </div>
 
-      <!-- Sección con el mapa de Google -->
       <div class="location-section">
         <div class="text-content">
             <h2>Ven a visitarnos a la 32º Feria de Software</h2>
@@ -86,10 +80,8 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
+  <footer class="py-4 text-center">
     <div class="footer-container">
-      <!-- Social Media Section -->
       <div class="footer-section social-media">
         <h3>Redes Sociales</h3>
         <div class="social-icons">
@@ -98,15 +90,11 @@
           <a href="#"><img src="assets/img/youtube.png" alt="YouTube"></a>
         </div>
       </div>
-
-      <!-- Logo Section -->
       <div class="footer-section logo-section">
         <a href="https://www.feriadesoftware.cl/">
         <img src="assets/img/fesw-logo-w.png" alt="FESW USM Logo">
         </a>
       </div>
-
-      <!-- Links Section -->
       <div class="footer-section links">
         <h3>Mapa del Sitio</h3>
         <ul>
@@ -116,8 +104,6 @@
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
-
-      <!-- Contact Section -->
       <div class="footer-section contact">
         <h3>Contáctanos</h3>
         <p>Av. Vicuña Mackenna 3939<br>San Joaquín, Región Metropolitana</p>
@@ -126,17 +112,15 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Script para la pantalla de carga -->
   <script>
     window.onload = function () {
       const loader = document.getElementById('loader');
       loader.style.opacity = '0';
       setTimeout(() => {
         loader.style.display = 'none';
-      }, 500); // Espera 500ms para que termine la transición
+      }, 500);
     };
   </script>
 </body>
