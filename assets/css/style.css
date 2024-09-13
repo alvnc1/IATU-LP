@@ -150,7 +150,14 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centra el contenido horizontalmente */
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .social-card img {
@@ -192,9 +199,7 @@ footer {
   border-radius: 100%;
 }
 
-
 /* Estilos de google maps */
-
 .location-section {
   display: flex;
   justify-content: space-between;
@@ -205,9 +210,9 @@ footer {
 }
 
 .text-content {
-  flex: 1; /* Para que ocupe el espacio necesario */
+  flex: 1;
   padding-right: 20px;
-  text-align: center; /* Alinea el texto al centro */
+  text-align: center;
 }
 
 .location-section h2 {
@@ -221,17 +226,179 @@ footer {
 }
 
 .map-container {
-  flex: 1; /* Para que el mapa ocupe el mismo espacio que el texto */
+  flex: 1;
 }
 
 iframe {
   width: 100%;
-  height: 450px; /* Ajusta el alto del mapa */
+  height: 450px;
   border: 0;
 }
 
+/* Footer */
 footer {
+  background-color: #2c2f33;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-section.links {
+  text-align: center; 
+}
+
+.footer-section.links ul {
+  padding-left: 0; 
+  display: inline-block; 
+}
+
+.footer-section.links ul li {
+  display: block;
+}
+
+.footer-section.links h3 {
   text-align: center;
-  padding: 20px;
-  background-color: #f1f1f1;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #bbb;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-section.social-media {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 8px;
+}
+
+.logo-section img {
+  max-width: 150px;
+}
+
+.footer-section.contact a {
+  color: #fff;
+}
+
+.footer-section.contact a:hover {
+  color: #fff;
+}
+
+/* Estilos para la pantalla de carga */
+#loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f9fb;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  overflow: hidden; /* Evita cualquier tipo de desplazamiento */
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #333;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Estilos del carrusel */
+.carousel {
+  position: relative; /* Espacio adicional para los indicadores */
+}
+
+.carousel-inner {
+  min-height: 140px; /* Para evitar que los indicadores se muevan con el contenido */
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+  position: absolute;
+  bottom: 0; /* Posiciona los indicadores al fondo del carrusel */
+  left: 0; /* Posiciona al inicio del carrusel */
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px; /* Espacio entre los indicadores */
+  transform: translateX(-170px); /* Ajusta el desplazamiento de los indicadores */
+}
+
+.carousel-indicators button {
+  background-color: #000000; /* Color negro para los indicadores */
+  border: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+  width: 12px; /* Indicador activo más grande */
+  height: 12px;
+}
+
+.carousel-indicators button:not(.active) {
+  background-color: #000; /* Mantén el color negro para los no activos */
+  opacity: 0.5; /* Le da un leve contraste a los no activos si deseas */
+  width: 6px;
+  height: 6px;
 }
