@@ -402,3 +402,7 @@ footer {
   width: 6px;
   height: 6px;
 }
+
+.carousel-inner p {
+  color: #2c2f33;
+}
