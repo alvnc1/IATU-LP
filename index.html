@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
   <header>
     <div class="logo">
       <a href="index.html">
@@ -18,64 +21,81 @@
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li><a href="#">Planes</a></li>
+        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+        <li><a href="nuestroequipo.html">Nuestro Equipo</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
-
+  
   <main>
     <section class="landing">
-      <h2>Bienvenido a IATU</h2>
-      <div id="carouselTextOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <p>IATU es una IA que analiza videos de pruebas de usuarios para mejorar la usabilidad y accesibilidad de sitios web, brindando recomendaciones específicas para asegurar una experiencia óptima.</p>
+      <div class="text-section" style="flex: 1;">
+        <h1 class="display-3 fw-bold mb-3">Bienvenido a IATU</h1>
+        
+        <div id="textCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <p class="lead">IATU es una IA que analiza videos de pruebas de usuarios para mejorar la usabilidad y accesibilidad de sitios web, brindando recomendaciones específicas para asegurar una experiencia óptima.</p>
+            </div>
+            <div class="carousel-item">
+              <p class="lead">Con IATU puedes detectar problemas de usabilidad en tiempo real y mejorar la experiencia del usuario con análisis avanzados.</p>
+            </div>
+            <div class="carousel-item">
+              <p class="lead">Nuestra IA proporciona retroalimentación sobre accesibilidad y navegación, asegurando que tu sitio web cumpla con los más altos estándares.</p>
+            </div>
           </div>
-          <div class="carousel-item">
-            <p>Con IATU puedes detectar problemas de usabilidad en tiempo real y mejorar la experiencia del usuario con análisis avanzados.</p>
-          </div>
-          <div class="carousel-item">
-            <p>Nuestra IA proporciona retroalimentación sobre accesibilidad y navegación, asegurando que tu sitio web cumpla con los más altos estándares.</p>
+          <div class="carousel-indicators justify-content-center mt-3">
+            <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Texto 1"></button>
+            <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="1" aria-label="Texto 2"></button>
+            <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="2" aria-label="Texto 3"></button>
           </div>
         </div>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselTextOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselTextOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselTextOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-      </div>
-  
-      <div class="buttons mt-3">
-        <a href="#" class="btn-video">
-          <div class="icon-play"></div>
-          Ver video
+        
+        <a href="#" class="btn btn-link mt-3" style="text-decoration: none; color: black;">
+          <div class="d-flex align-items-center">
+            <span class="icon-play me-2"></span>
+            Ver video
+          </div>
         </a>
       </div>
+      <div class="image-section" style="flex: 0;">
+        <img src="assets/img/icono2.png" alt="EYON Logo Grande" style="max-width: 300px;">
+      </div>
     </section>
-
     <section class="features text-center section-eyon">
       <h2>Descubre cómo funciona IATU</h2>
       <div class="container">
         <div class="row">
-          <!-- Primera característica -->
-          <div class="col-md-4">
-            <img src="assets/img/guia.png" alt="Reconocimiento facial" class="mb-3 guia-img">
-            <h4>Guía Usabilidad Web</h4>
-            <p>Evalúa y mejora la estructura y usabilidad general de cualquier sitio web. Aseguramos que se sigan las mejores prácticas recomendadas en diseño, navegación y contenido, para que cada sitio sea intuitivo y fácil de usar.</p>
+          <!-- Guía Usabilidad Web -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/img/guia.png" alt="Guía Usabilidad Web" class="card-img-top guia-img">
+              <div class="card-body">
+                <h4 class="card-title">Guía Usabilidad Web</h4>
+                <p class="card-text">Evalúa y mejora la estructura y usabilidad general de cualquier sitio web. Aseguramos que se sigan las mejores prácticas recomendadas en diseño, navegación y contenido, para que cada sitio sea intuitivo y fácil de usar.</p>
+              </div>
+            </div>
           </div>
-          <!-- Segunda característica -->
-          <div class="col-md-4">
-            <img src="assets/img/guia.png" alt="Reconocimiento conductual" class="mb-3 guia-img">
-            <h4>Guía Adultos Mayores</h4>
-            <p>IATU se especializa en identificar áreas donde los adultos mayores puedan tener dificultades en la navegación y en la comprensión de contenido web. Nuestro sistema proporciona recomendaciones para hacer que la experiencia sea más amigable y accesible para ellos.</p>
+          <!-- Guía Adultos Mayores -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/img/guia.png" alt="Guía Adultos Mayores" class="card-img-top guia-img">
+              <div class="card-body">
+                <h4 class="card-title">Guía Adultos Mayores</h4>
+                <p class="card-text">IATU se especializa en identificar áreas donde los adultos mayores puedan tener dificultades en la navegación y en la comprensión de contenido web. Nuestro sistema proporciona recomendaciones para hacer que la experiencia sea más amigable y accesible para ellos.</p>
+              </div>
+            </div>
           </div>
-          <!-- Tercera característica -->
-          <div class="col-md-4">
-            <img src="assets/img/guia.png" alt="Red de locales" class="mb-3 guia-img">
-            <h4>Guía Accecsibilidad Web</h4>
-            <p>IATU garantiza que los sitios web cumplan con los estándares de accesibilidad más exigentes, asegurando que sean navegables para todos, incluidas las personas con discapacidades físicas y cognitivas.</p>
+          <!-- Guía Accesibilidad Web -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/img/guia.png" alt="Guía Accesibilidad Web" class="card-img-top guia-img">
+              <div class="card-body">
+                <h4 class="card-title">Guía Accesibilidad Web</h4>
+                <p class="card-text">IATU garantiza que los sitios web cumplan con los estándares de accesibilidad más exigentes, asegurando que sean navegables para todos, incluidas las personas con discapacidades físicas y cognitivas.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -84,7 +104,6 @@
 
   <footer class="py-4 text-center">
     <div class="footer-container">
-      <!-- Social Media Section -->
       <div class="footer-section social-media">
         <h3>Redes Sociales</h3>
         <div class="social-icons">
@@ -94,25 +113,22 @@
         </div>
       </div>
 
-      <!-- Logo Section -->
       <div class="footer-section logo-section">
         <a href="https://www.feriadesoftware.cl/">
-        <img src="assets/img/fesw-logo-w.png" alt="FESW USM Logo">
+          <img src="assets/img/fesw-logo-w.png" alt="FESW USM Logo">
         </a>
       </div>
 
-      <!-- Links Section -->
       <div class="footer-section links">
         <h3>Mapa del Sitio</h3>
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">¿Quiénes Somos?</a></li>
+          <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+          <li><a href="nuestroequipo.html">Nuestro Equipo</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
 
-      <!-- Contact Section -->
       <div class="footer-section contact">
         <h3>Contáctanos</h3>
         <p>Av. Vicuña Mackenna 3939<br>San Joaquín, Región Metropolitana</p>
@@ -122,5 +138,14 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.onload = function () {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500);
+    };
+  </script>
 </body>
 </html>

@@ -27,7 +27,9 @@ header {
 
 .logo {
   display: flex;
+  margin-left: left;
   align-items: center;
+  margin-left: 30px;
 }
 
 .logo img {
@@ -42,6 +44,7 @@ nav {
   justify-content: center; /* Centra el menú horizontalmente */
   align-items: center; /* Alinea verticalmente si es necesario */
   position: relative; /* Cambia a relative para evitar problemas de alineación */
+  margin-right: 50px;
 }
 
 nav ul {
@@ -86,12 +89,12 @@ main {
 }
 
 .landing p {
-  text-align: left;
+  text-align: justify;
   font-size: 16px;
   margin-bottom: 20px;
   color: #777;
   max-width: 600px;
-  margin-left: 50px;
+  margin-left: 7px;
   margin-right: auto;
 }
 
@@ -390,7 +393,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   gap: 12px; /* Espacio entre los indicadores */
-  transform: translateX(-170px); /* Ajusta el desplazamiento de los indicadores */
+  transform: translateX(-460px); /* Ajusta el desplazamiento de los indicadores */
 }
 
 .carousel-indicators button {
@@ -430,12 +433,45 @@ footer {
 }
 
 
-
 .guia-img {
-  width: 90px;
+  width: 90px; /* Ajusta el tamaño según sea necesario */
   height: auto;
-  max-width: 100%;
+  margin: 20px auto; /* Esto centrará la imagen en el eje horizontal */
+  display: block; /* Asegura que la imagen se comporte como un bloque */
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: none; /* Opcional: elimina el borde para un estilo más limpio */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+  transition: transform 0.3s ease-in-out; /* Añade animación al hover */
+  border-radius: 80px;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;
+}
+
+
+
 
 /* Estilos para el botón de Ver video */
 .btn-video {
@@ -549,3 +585,35 @@ nav ul li a.active {
     .features {
       margin-top: 2rem; /* Ajustar margen superior para acercar más la sección */
     }
+
+  /* Estilos para las cards de Misión y Visión */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  border: none; /* Opcional: elimina el borde para un estilo más limpio */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+  transition: transform 0.3s ease-in-out; /* Añade animación al hover */
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;
+}
