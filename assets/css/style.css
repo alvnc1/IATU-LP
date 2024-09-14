@@ -513,8 +513,13 @@ footer {
 }
 
 .role-text {
-  color:#7D7D7D; /* Color grafito */
+  color: #7D7D7D; /* Color grafito */
+  text-align: center; /* Centrará el texto horizontalmente */
+  display: flex;
+  justify-content: center; /* Alinea horizontalmente */
+  align-items: center; /* Alinea verticalmente si el contenedor tiene una altura definida */
 }
+
 /* Efecto hover para todas las secciones del menú */
 nav ul li a {
   color: #000; /* Color por defecto (negro) */
