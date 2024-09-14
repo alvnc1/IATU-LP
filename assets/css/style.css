@@ -413,6 +413,11 @@ footer {
   padding-bottom: 80px;
 }
 
+.section-eyon h2 {
+  margin-bottom: 50px; /* Añade más espacio debajo del título */
+}
+
+
 
 .guia-img {
   width: 90px;
