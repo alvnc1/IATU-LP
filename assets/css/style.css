@@ -388,12 +388,12 @@ footer {
 /* Indicadores del carrusel */
 .carousel-indicators {
   position: absolute;
-  bottom: 0; /* Posiciona los indicadores al fondo del carrusel */
-  left: 0; /* Posiciona al inicio del carrusel */
+  bottom: 0; /* Stay at the bottom */
+  left: 0%; /* Start at the center horizontally */
+  transform: translateX(-67%); /* Center horizontally */
   display: flex;
-  justify-content: flex-start;
-  gap: 12px; /* Espacio entre los indicadores */
-  transform: translateX(-460px); /* Ajusta el desplazamiento de los indicadores */
+  justify-content: center; /* Keep indicators centered */
+  gap: 12px; /* Space between indicators */
 }
 
 .carousel-indicators button {
@@ -417,6 +417,7 @@ footer {
   width: 6px;
   height: 6px;
 }
+
 
 .carousel-inner p {
   color: #2c2f33;
