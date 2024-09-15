@@ -623,3 +623,12 @@ nav ul li a.active {
   color: #555;
   text-align: justify;
 }
+
+
+#videoButton {
+  margin-left: 0; /* Ajusta según la necesidad */
+}
+
+.icon-play {
+  margin-left: -10px !important; /* Asegura que el ícono esté completamente a la izquierda */
+}
