@@ -5,28 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Nosotros - Usability AI Solutions</title>
   <link rel="icon" href="assets/img/icono.png" type="image/x-icon">
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style2.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <div id="loader">
     <div class="spinner"></div>
   </div>
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="assets/img/logo.png" alt="Company Logo">
-      </a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobrenosotros.html" class="active">Sobre Nosotros</a></li>
-        <li><a href="nuestroequipo.html">Nuestro Equipo</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+  
+    <nav class="navbar fixed-top navbar-expand-lg border-bottom">
+      <div class="container fix-logo">
+          <a class="navbar-brand ps-0" href="#">
+              <img src="assets/img/logo.png" alt="Bootstrap" width="150">
+          </a>
+        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="lni lni-grid-alt"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header ps-2 border-bottom">
+              <a class="navbar-brand" href="#">
+                  <img src="assets/img/logo.png" alt="Bootstrap" width="150">
+              </a>
+              <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="lni lni-cross-circle"></i>
+              </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mx-lg-2 active" href="sobrenosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mx-lg-2 " href="nuestroequipo.html">Nuestro Equipo</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
-  </header>
+  
 
   <main>
     <section class="about-section text-center py-5">
@@ -89,44 +114,39 @@
     </section>
   </main>
 
-  <footer class="py-4 text-center">
-    <div class="footer-container">
-      <!-- Social Media Section -->
-      <div class="footer-section social-media">
-        <h3>Redes Sociales</h3>
-        <div class="social-icons">
+  <div class="container-fluid pie-pag">
+    <footer class="container ">
+      <div class="row mx-5">
+        <div class="col-12 col-md-3 text-center pie-1 mb-5 mt-3 mt-md-0  mb-md-0">
+          <h3>Redes Sociales</h3>
           <a href="https://www.linkedin.com/company/usability-ai-solutions/"><img src="assets/img/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://www.instagram.com/iatu.app/"><img src="assets/img/instagram.png" alt="Instagram"></a>
+          <a class="mx-3" href="https://www.instagram.com/iatu.app/"><img src="assets/img/instagram.png" alt="Instagram"></a>
           <a href="https://www.youtube.com/watch?v=z-TJL4zm1Oc"><img src="assets/img/youtube.png" alt="YouTube"></a>
         </div>
+        <div class="col-12 col-md-3 text-center  mb-5 mb-md-0">
+          <a class="pie-2-1" href="https://www.feriadesoftware.cl/"><img src="assets/img/fesw-logo-w.png" alt="FESW USM Logo"></a>
+          <a href="https://www.usm.cl/"><img src="assets/img/usm.png" alt="USM Logo" style="max-width: 250px; margin-left: 20px; margin-top: 20px;"></a>
+        </div>
+        
+        <div class="col-12 col-md-3 text-center pie-3 mb-5 mb-md-4">
+          <h3>Mapa del Sitio</h3>
+          <ul class="mb-0">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+            <li><a href="nuestroequipo.html">Nuestro Equipo</a></li>
+            <li class="mb-0"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3 text-center pie-4 mb-4">
+          <h3>Contáctanos</h3>
+          <p>Av. Vicuña Mackenna 3939<br>San Joaquín, Región Metropolitana</p>
+          <p>Email: <a href="mailto:solutionsiatu@gmail.com">solutionsiatu@gmail.com</a></p>
+        </div>
       </div>
+    </footer>
+  </div>
 
-      <!-- Logo Section -->
-      <div class="footer-section logo-section">
-        <a href="https://www.feriadesoftware.cl/">
-          <img src="assets/img/fesw-logo-w.png" alt="FESW USM Logo">
-        </a>
-      </div>
-
-      <!-- Links Section -->
-      <div class="footer-section links">
-        <h3>Mapa del Sitio</h3>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-          <li><a href="nuestroequipo.html">Nuestro Equipo</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Section -->
-      <div class="footer-section contact">
-        <h3>Contáctanos</h3>
-        <p>Av. Vicuña Mackenna 3939<br>San Joaquín, Región Metropolitana</p>
-        <p>Email: <a href="mailto:solutionsstumbl@gmail.com">solutionsstumbl@gmail.com</a></p>
-      </div>
-    </div>
-  </footer>
+ 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
